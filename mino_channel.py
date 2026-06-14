@@ -6,4 +6,6 @@ def mimo_channel(Nt, Nr):
     return H
 
 Nt, Nr = 4, 4
-print(mimo_channel(Nt, Nr))
+for i, element in enumerate(mimo_channel(Nt, Nr)):
+    print(f"{i} element:", element)
+
